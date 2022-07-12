@@ -282,7 +282,7 @@ header .navbar ul li a:hover {
     text-align: center;
     font-size: 2rem;
     color: #fff;
-    background-color: var(--myColor);
+    background: var(--myColor);
 }
 
 .portfolio .box-container{
@@ -394,7 +394,7 @@ header .navbar ul li a:hover {
 }
 
 @media(max-width: 991px){
-    html{
+    header{
         left: -120%;
     }
     #menu{
@@ -426,7 +426,7 @@ header .navbar ul li a:hover {
         width: 100%;    
     }
 
-    .education.box-container .box{
+    .education .box-container .box{
         width: 100%;
     }
 
