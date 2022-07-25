@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&display=swap');
 
 :root{
-    --yellow1: #f9ca24;
-    --myColor: limegreen;
+    /*--myColor: rgb(50, 200, 50);
+    --myBackgroundColor: rgb(40, 40, 40);
+    --myBackgroundColor2: rgb(30, 30, 30);
+    */
+    --myColor: rgb(0, 255, 40);
+    --myBackgroundColor: rgb(0, 20, 0);
+    --myBackgroundColor2: rgb(20, 80, 20);
+    --myBackgroundColor3: rgb(40, 40, 40);
 
 }
 
@@ -33,7 +39,7 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-track {
-    background: #222;
+    background: var(--myBackgroundColor3);
 }
 
 html::-webkit-scrollbar-thumb {
@@ -41,7 +47,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 body {
-    background: #111;
+    background: var(--myBackgroundColor);
     overflow-x: hidden;
     padding-left: 35rem;
 }
@@ -53,7 +59,7 @@ section{
 
 .btn{
     padding: .7rem 3rem;
-    background: #333;
+    background: var(--myBackgroundColor3);
     color: #fff;
     cursor: pointer;
     margin-top: 1rem;
@@ -91,7 +97,7 @@ header {
     z-index: 1000;
     height: 100%;
     width: 35rem;
-    background: #1a1a1a;
+    background: var(--myBackgroundColor2);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -100,11 +106,11 @@ header {
 }
 
 header .user .image{
+    margin-top: 3rem;
     height:17rem;
     width: 17rem;
     border-radius: 20%;
     object-fit: cover;
-    margin-bottom: 1rem;
     border:.7rem solid var(--myColor);
 }
 
@@ -131,7 +137,8 @@ header .navbar ul li a {
     display: block;
     padding: 1rem;
     margin: 1.5rem 0;
-    background: #333;
+    background: var(--myBackgroundColor);
+    /*background: #333;*/
     color: #fff;
     font-size: 2rem;
     border-radius: 5rem;
@@ -205,7 +212,7 @@ header .navbar ul li a:hover {
 }
 
 .about .row .info {
-    flex: 1 1 48rem;
+    flex: 1 1 70rem;
     padding: 2rem 1rem;
     padding-left: 6rem;
 }
@@ -218,12 +225,13 @@ header .navbar ul li a:hover {
 }
 
 .about .row .info ul{
-    font-size: 2rem;
+    font-size: 1.6rem;
     padding: 2rem 5rem;
     font-weight: normal;
 }
 .about .row .info ul li{
     padding: .5rem;
+    color: lightslategray;
 }
 
 .about .row .info .fas{
@@ -232,9 +240,9 @@ header .navbar ul li a:hover {
     line-height: 3rem;
 }
 
-.about .row .info cskills{
-    font-size: 2rem;
-    color: var(--myColor);
+.about .row .info ul li span{
+    font-size: 1.6rem;
+    color: whitesmoke;
     padding: 5rem 1rem;
     font-weight: normal;
 }
@@ -245,7 +253,7 @@ header .navbar ul li a:hover {
 }
 
 .about .row .counter {
-    flex: 1 1 48rem;
+    flex: 1 1 20rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -256,7 +264,7 @@ header .navbar ul li a:hover {
     background: #222;
     text-align: center;
     padding: 2rem;
-    margin: 2rem;
+    margin: 3rem;
 }
 
 .about .row .counter .box span{
@@ -271,7 +279,7 @@ header .navbar ul li a:hover {
 
 .education .box-container{
     display: flex;
-    align-items: center;
+    align-items:baseline;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 1rem 0;
@@ -320,10 +328,46 @@ header .navbar ul li a:hover {
     background: var(--myColor);
 }
 
+.education .box-container .cert-box{
+    width: 45rem;   
+    height: 30rem;   
+    margin: 4rem 1rem;
+    padding-left: 4rem;
+    border-left: .2rem solid #fff;
+    position: relative;
+}
+
+.education .box-container .cert-box i{
+    position: absolute;
+    top: -1.5rem;
+    left: -2.5rem;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    background: var(--myColor);
+}
+
+.education .box-container .cert-box img {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    border-radius: 5%;
+    object-fit: cover;
+    justify-content: space-around;
+}
+
+.education .box-container .cert-box:hover img{
+    transform: scale(1.6);
+}
+
 
 .experience .box-container{
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 1rem 0;
@@ -411,13 +455,13 @@ header .navbar ul li a:hover {
 .contact .row .content{
     flex: 1 1 30rem;
     padding: 4rem;
-    padding-bottom: 0;    
+    padding-bottom: 0;
 }
 
 .contact .row form{
     flex: 1 1 45rem;
-    padding: 2rem;
-    margin: 2rem;
+    padding: 1rem;
+    margin: 1rem;
     margin-bottom: 4rem;
 }
 
