@@ -427,13 +427,27 @@ header .navbar ul li a:hover {
 }
 
 .portfolio .box-container .box{
-    height: 20rem;
-    width: 26rem;
+    height: 56rem;
+    width: 44rem;
     border-radius: 1rem;
     margin: 2rem;
     overflow: hidden;
     cursor: pointer;
 }
+
+.portfolio .box-container .box .box-title{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: whitesmoke;
+    border-radius: 1rem;
+    background: var(--myBackgroundColor2);
+    padding: 1rem;
+    margin: .5rem 0rem;
+    cursor: default;
+    text-align: center;
+    
+}
+
 
 .portfolio .box-container .box img{
     height: 100%;
