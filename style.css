@@ -109,9 +109,9 @@ header .user .image{
     margin-top: 3rem;
     height:17rem;
     width: 17rem;
-    border-radius: 20%;
+    border-radius: 50%;
     object-fit:cover;
-    border:.8rem solid var(--myColor);
+    border:.6rem solid var(--myColor);
 }
 
 header .user .name{
